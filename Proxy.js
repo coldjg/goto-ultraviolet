@@ -8,6 +8,12 @@ if(confirm("Redirect to ultraviolet?")){(function(){javascript:winloc = window.l
 /// Eurda.js
 (function () { var script = document.createElement('script'); script.src="//cdn.jsdelivr.net/npm/eruda"; document.body.appendChild(script); script.onload = function () { eruda.init() } })();
 
+/// AllowPaste.js
+document.addEventListener('paste', function(e) {
+  e.stopImmediatePropagation();
+  return true;
+}, true);
+
 /// AddLink.js
 /*var idk = document.createElement(a);
 idk.appendchild(document.createTextNode("Jump to ultraviolet ez"));
