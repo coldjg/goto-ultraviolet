@@ -14,6 +14,9 @@ document.addEventListener('paste', function(e) {
   return true;
 }, true);
 
+/// Ingot.js
+(function () {var a = document.createElement('script');a.src = 'https://cdn.jsdelivr.net/gh/FogNetwork/Ingot/ingot.min.js';document.body.appendChild(a);}())
+
 /// AddLink.js
 /*var idk = document.createElement(a);
 idk.appendchild(document.createTextNode("Jump to ultraviolet ez"));
