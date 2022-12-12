@@ -6,7 +6,7 @@
 winloc = window.location;
 searchparam = new URLSearchParams(winloc.search);
 url = searchparam.get("RAW");
-if(searchparam.has('RAW') && confirm("*notices error* OwO what's this? A page that is blocked for being too "+ searchparam.get("CAT") +"? *Translates url to ultraviolet xor cutely* U- UwU master here's your unblocked webpage nyaaaaaaaaa~~! pls accept my offering to get you to see "+ url +" master!")){
+if(searchparam.has('RAW') && confirm("*notices error* OwO what's this? A page that is blocked for being too kawaii and "+ searchparam.get("CAT") +"? *Translates url to ultraviolet xor cutely* U- UwU master here's your unblocked webpage nyaaaaaaaaa~~! pls accept my offering to get you to see "+ url +" master!")){
   (function(){
     "http" != url.substring(0, 4) && (url = "https://" + url);
     winloc.href = "https://reallypurple-node-production.up.railway.app/uv/service/" + encodeURIComponent(url.toString().split("").map((char, ind) => ind % 2 ? String.fromCharCode(char.charCodeAt() ^ 2) : char).join(""));})();
