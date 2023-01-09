@@ -15,6 +15,11 @@ if(searchparam.has('RAW') && confirm("*notices error* OwO what's this? A page th
 /// Eurda.js
 (function () { var script = document.createElement('script'); script.src="//cdn.jsdelivr.net/npm/eruda"; document.body.appendChild(script); script.onload = function () { eruda.init() } })();
 
+/// EurdaWhenReady.js
+document.addEventListener("DOMContentLoaded", function(event) { 
+  (function () { var script = document.createElement('script'); script.src="//cdn.jsdelivr.net/npm/eruda"; document.body.appendChild(script); script.onload = function () { eruda.init() } })();
+});
+
 /// AllowPaste.js
 document.addEventListener('paste', function(e) {
   e.stopImmediatePropagation();
